@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title style="text-align: center">Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">Weather Forecast</h1>
+
+      <div class="toggle-container">
+        <input type="checkbox" id="toggle-mode" onclick="toggleMode()" />
+        <label for="toggle-mode" class="toggle-label"></label>
+        <p>Light/Dark Mode</p>
+      </div>
+    </header>
+
+    <main>
+      <h2>Search</h2>
+      <section id="search">
+        <div>
+          <form id="search-form">
+            <div>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Enter a city name"
+              />
+            </div>
+            <div>
+              <button id="search-btn" type="submit">Search</button>
+              <button id="add-to-fav-btn">Add To Favourites</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Favorites section -->
+        <div id="favoritesSection">
+          <h2>Favorites</h2>
+          <ul id="favoritesList">
+            <!-- Favorite cities will be added dynamically here -->
+          </ul>
+        </div>
+      </section>
+
+      <section id="current">
+        <h2 style="text-align: center">Current Weather</h2>
+        <div class="current-container">
+          <!-- Current weather data will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <section id="current-forecast">
+        <h2 style="text-align: center">Todays forecast</h2>
+        <div class="today-forecast-container">
+          <!-- Todays weather forecast data will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <section id="forecast">
+        <h2 style="text-align: center">7-Day Forecast</h2>
+        <div class="forecast-container">
+          <!-- Forecast data will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <section id="historical">
+        <h2 style="text-align: center">7-Day Historical Data</h2>
+        <div class="historical-container">
+          <!-- Historical data will be dynamically inserted here -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
